@@ -16,7 +16,9 @@ const GlobalStyle = createGlobalStyle`
     min-height:100vh;
     display: grid;
     place-items: center;
-    background: lightpink;
+    background: lightpink;   
+
+  
   }
 
 
