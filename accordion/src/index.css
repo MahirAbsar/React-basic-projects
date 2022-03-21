@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #8cd867;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: #fff;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 95vw;
+}
+h1 {
+  text-transform: uppercase;
+}
+.icon {
+  font-size: 1.2rem;
+}
+
+article .top {
+  display: flex;
+  justify-content: space-between;
+}
