@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.btn_container {
+  text-align: center;
+}
+.btn_container button {
+  margin: 0 10px;
+  background: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+button.active {
+  background: none;
+  border: teal 2px solid;
+  color: black;
+}
+
+article {
+  margin: 20px 0;
+}
+article h4,
+h5,
+p {
+  margin-top: 20px;
+}
