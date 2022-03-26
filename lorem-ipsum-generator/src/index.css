@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+body {
+  letter-spacing: 0.1rem;
+}
+.section_center {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+input {
+  width: 4rem;
+  padding: 0.25rem 0.5rem;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 0.875rem;
+  background: teal;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  padding: 0.1rem;
+  text-transform: uppercase;
+}
+
+.lorem_text {
+  margin-top: 30px;
+}
+
+.lorem_text p {
+  margin-top: 20px;
+}
