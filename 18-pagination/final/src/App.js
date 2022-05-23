@@ -5,14 +5,12 @@ function App() {
   const { loading, data } = useFetch()
   const [page, setPage] = useState(0)
   const [followers, setFollowers] = useState([])
+
   useEffect(() => {
     if (loading) return
     setFollowers(data[page])
   }, [loading, page])
 
-  const handlePage = (index) => {
-    setPage(index)
-  }
   const nextPage = () => {
     setPage((oldPage) => {
       let nextPage = oldPage + 1
@@ -31,10 +29,15 @@ function App() {
       return prevPage
     })
   }
+
+  const handlePage = (index) => {
+    setPage(index)
+  }
+
   return (
     <main>
       <div className='section-title'>
-        <h1>{loading ? 'Loading...' : 'Pagination'}</h1>
+        <h1>{loading ? 'loading...' : 'pagination'}</h1>
         <div className='underline'></div>
       </div>
       <section className='followers'>
@@ -48,7 +51,7 @@ function App() {
             <button className='prev-btn' onClick={prevPage}>
               prev
             </button>
-            {data.map((_, index) => {
+            {data.map((item, index) => {
               return (
                 <button
                   key={index}
